@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Science Gothic', sans-serif;
+}
+
+
+body {
+    background:linear-gradient(135deg, #4382d1, #333);
+    color: #000000;
+}
+
+/* NAVBAR */
+nav {
+    background:linear-gradient(135deg,#4382d1,#333);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00d4ff;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #4382d1, #333);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* SECTION */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(2, 2, 2);
+    font-family: 'Science Gothic', sans-serif;
+}
+
+button {
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Science Gothic', sans-serif;
+}
+
+button:hover {
+    background: #00d4ff;
+    color: black;
+    
+}
+
+/* CONTACT FORM */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-family: 'Science Gothic', sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: black;
+    color: white;
+}
+
+.active-link:hover {
+    border: 2px solid white;     /* outline */
+    padding: 5px 10px;            /* space inside */
+    border-radius: 5px;           /* rounded corners */
+    box-shadow: 0px 0px 8px rgb(249, 249, 249);
+}
+.project-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.project-btn:hover {
+    background: #ffffff;
+    color: #000000;
+    transform: scale(1.05);
+    border: 2px solid black;
+}
+.resume-btn-container {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.resume-btn {
+    background: rgb(7, 3, 56);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.resume-btn:hover {
+    background: white;
+    color: black;
+    border: 2px solid black;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: white;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Base circle */
+.icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-block;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+/* Icon images */
+.insta {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/174/174855.png');
+}
+
+.github {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/25/25231.png');
+}
+
+.fb {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/733/733547.png');
+}
+
+/* Hover animation */
+.icon:hover {
+    transform: scale(1.15);
+    background-color: #e1e1e1;
+}
+footer a {
+    color: #aeceef;        /* Change this to any color you want */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #0f88fa;        /* Hover color */
+    text-decoration: underline;
+}
+/* Glowing cursor effect */
+.cursor-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 150, 255, 0.4), rgba(0, 150, 255, 0));
+    transform: translate(-50%, -50%);
+    filter: blur(50px);
+    z-index: 9999;
+    opacity: 0.6;
+    transition: background 0.2s ease-out;
+}
+
+/* Optional: subtle glow on background */
+body {
+    background: linear-gradient(135deg, #0258b5, #2c5282, #1A202C);
+    background-size: 200%;
+    animation: slowBgMove 10s infinite alternate;
+}
+
+@keyframes slowBgMove {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}

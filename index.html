@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aryan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Hello, I'm Aryan</h1>
+    <p>Student | Cloud & AI | Tech Enthusiast</p>
+</div>
+
+<section>
+    <h2>Welcome to my portfolio</h2>
+    <p>This website is to showcases my projects, skills, and experience.</p>
+</section>
+
+<footer class="footer">
+    <div class="contact-info">
+        Email: <a href="mailto:aryanpratap15mar@gmail.com">aryanpratap15mar@gmail.com</a><br>
+        Phone: <a href="tel:+919654377020">+91 9654377020</a>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/_x._aryan_.x_10" target="_blank" rel="noopener noreferrer" class="icon insta" title="Instagram" aria-label="Instagram"></a>
+        <a href="https://github.com/AryanPratap1503" target="_blank" rel="noopener noreferrer" class="icon github" title="GitHub" aria-label="GitHub"></a>
+        <a href="https://facebook.com/ARYANpratap30" target="_blank" rel="noopener noreferrer" class="icon fb" title="Facebook" aria-label="Facebook"></a>
+    </div>
+</footer>
+<div class="cursor-glow"></div>
+<script>
+    const glow = document.querySelector('.cursor-glow');
+
+    document.addEventListener('mousemove', (e) => {
+        glow.style.top = `${e.clientY}px`;
+        glow.style.left = `${e.clientX}px`;
+    });
+</script>
+
+
+</body>
+</html>
